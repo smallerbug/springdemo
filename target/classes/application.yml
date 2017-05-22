@@ -1,0 +1,19 @@
+server:
+  address: localhost
+  port: 8081
+  
+spring:
+ mvc:
+    static-path-pattern: /**
+ datasource:
+    name: db
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/springboot 
+    username: root  
+    password: root  
+    driver-class-name: com.mysql.jdbc.Driver  
+mybatis:
+  mapper-locations: classpath:mybatis/Mapper/*.xml
+  typeAliasesPackage: com.weijf.springboot.model
+  
+     
